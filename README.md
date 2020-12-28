@@ -2,4 +2,10 @@
 This project was created in order that it can be used for different projects, personal, business, you can give it the use you want.
 ## Available Scripts
 To start clone the project and use:
-### `npm i ` Or you can also use `npm install`
+### `npm i ` or you can also use `npm install`
+
+To start the server in your browser:
+### `npm run dev`
+
+To create your production files:
+### `npm run build`
