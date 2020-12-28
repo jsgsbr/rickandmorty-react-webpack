@@ -9,3 +9,10 @@ To start the server in your browser:
 
 To create your production files:
 ### `npm run build`
+
+## What does this template bring?
+This template already has installed what is necessary to be able to be used in its entirety
+* `JSX | JS`
+* `CSS | SASS`
+* `ReactJS and ReactDOM`
+* `Images`
