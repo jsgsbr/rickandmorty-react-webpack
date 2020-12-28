@@ -1,14 +1,14 @@
 {
   "name": "react-webpack",
   "version": "1.0.0",
-  "description": "",
+  "description": "React Webpack Template",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
     "dev": "webpack serve --mode development --open chrome --devtool eval-cheap-module-source-map"
   },
   "keywords": [],
-  "author": "",
+  "author": "https://github.com/jsgsbr",
   "license": "ISC",
   "dependencies": {
     "core-js": "^3.8.1",
