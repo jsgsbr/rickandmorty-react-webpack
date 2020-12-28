@@ -12,7 +12,47 @@ To create your production files:
 
 ## What does this template bring?
 This template already has installed what is necessary to be able to be used in its entirety
+* `ReactJS and ReactDOM`
 * `JSX | JS`
 * `CSS | SASS`
-* `ReactJS and ReactDOM`
-* `Images`
+* `IMG`
+
+
+```js
+module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        use: 'babel-loader',
+        exclude: /node_modules/,
+        resolve: {
+          extensions: ['.js', '.jsx'],
+        },
+      },
+      {
+        test: /\.css$/,
+        use: [
+            'style-loader', 
+            'css-loader'
+        ],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use:  [{
+            loader: 'file-loader'
+        }]
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+            "style-loader",
+            "css-loader",
+            "sass-loader"
+        ],
+        resolve: {
+            extensions: ['.sass', '.scss']
+        }
+      }
+    ],
+  }
+```
