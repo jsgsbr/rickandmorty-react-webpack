@@ -17,9 +17,21 @@ This template already has installed what is necessary to be able to be used in i
 * `CSS | SASS`
 * `IMG`
 
-
+### The webpack.config.js is configured as follows:
 ```js
-module: {
+const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: "bundle.[contenthash].js",
+    path: path.resolve(__dirname, "dist"),
+    publicPath: ""
+  },
+  mode: 'production',
+  module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
@@ -54,5 +66,12 @@ module: {
         }
       }
     ],
-  }
+  },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+    }),
+  ],
+};
 ```
