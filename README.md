@@ -75,3 +75,7 @@ module.exports = {
   ],
 };
 ```
+If you have knowledge of webpack you can modify the exit route to your liking
+
+## About
+As explained above, this project has many purposes and if you want to use them in your projects, do not hesitate to do so.
