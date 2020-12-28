@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "https://github.com/jsgsbr",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "core-js": "^3.8.1",
     "react": "^17.0.1",
