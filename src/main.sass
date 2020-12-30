@@ -1,0 +1,162 @@
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+header 
+    background: url('./images/bg2.jpg')
+    background-repeat: no-repeat
+    height: 40vh
+    background-size: cover
+    background-position: center
+
+header:before 
+    content: ""
+    width: 100%
+    height: 40vh
+    position: absolute
+    top: 0px
+    left: 0px
+
+    background-image: linear-gradient(90deg, #1F2937, #111927)
+    opacity: 0.8
+
+.container 
+    width: 80%
+    margin: auto
+    height: 100%
+    
+.content
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    position: relative
+
+.title
+    padding: 10px
+    color: #82BF45
+    font-family: Shlop
+    font-size: 5rem
+
+.text
+    color: #17A3AC
+    font-size: 17px
+    font-family: Shlop
+
+.characters 
+    margin-top: 20px
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+.box
+    width: 30%
+    background-color: #1F2937
+    margin: 10px
+    display: flex
+    border-radius: 4px
+    box-shadow: 4px 5px #d9e5d6
+
+    img 
+        width: 50%
+    .character
+        width: 100%
+        margin: 10px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        .name
+            font-family: Shlop
+            font-size: 40px
+            color: #82BF45
+        .specie
+            text-align: center
+            padding: 5px
+            background-color: #364150
+            color: white
+            border-radius: 4px
+            text-transform: uppercase
+            font-size: 19px
+            margin: 3px 0px
+            font-family: Shlop
+        .status
+            text-align: center
+            color: white
+            padding: 4px
+            background-color: #364150
+            border-radius: 4px
+            text-transform: uppercase
+            font-size: 9px
+            margin: 3px 0px
+
+
+@media screen and ( max-width: 1588px )
+    .container
+        width: 85%
+    .box
+        .character
+            .name
+                font-size: 35px
+    
+@media screen and ( max-width: 1450px )
+    .container
+        width: 90%
+
+@media screen and ( max-width: 1300px )
+    .container
+        width: 95%
+
+@media screen and ( max-width: 1230px )
+    .box 
+        width: 35%
+
+@media screen and ( max-width: 1230px )
+    .container
+        width: 100%
+
+@media screen and ( max-width: 1080px )
+    .box
+        width: 45%
+
+@media screen and ( max-width: 860px )
+    .container
+        width: 80%
+    .box
+        width: 100%
+
+@media screen and ( max-width: 636px )
+    .title
+        font-size: 4rem
+        padding: 5px
+    
+@media screen and ( max-width: 534px )
+    .text
+        font-size: 15px
+    .container
+        width: 90%
+
+@media screen and ( max-width: 444px )
+    .container
+        width: 95%
+    .title
+        font-size: 4rem
+        padding: 2px
+
+@media screen and ( max-width: 416px )
+    .container
+        width: 100%
+    .title
+        font-size: 4rem
+        padding: none
+
+@media screen and ( max-width: 392px )
+    .title
+        font-size: 3rem
+
+@media screen and ( max-width: 378px )
+    .text
+        font-size: 13px

@@ -1,10 +1,17 @@
 import React, {Fragment} from 'react'
-import './App.sass'
+import Header from './components/Header'
+import Characters from './components/Characters'
+import './main.sass'
+import './components/Header.css'
+import './components/Characters.css'
 
 const App = () => {
     return ( 
         <Fragment>
-            <h1>Hello World</h1>
+            <Header
+                title="Rick and Morty API"
+            />
+            <Characters />
         </Fragment>
      );
 }
